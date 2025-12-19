@@ -1,7 +1,8 @@
 # 40)Write a Python program to get unique values from a list 
 
-def fun(lst): 
-    return list(set(lst)) 
-my_list = [1, 2, 2, 3, 4, 4, 5, 1] 
-print("Original list:", my_list) 
-print("Unique values:", fun(my_list)) 
+l=[1,1,3,2,3,4]
+uni=[]
+for i in l:
+    if i not in uni:
+        uni.append(i)
+print(uni)        
