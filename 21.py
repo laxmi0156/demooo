@@ -5,11 +5,12 @@ leave it unchanged. '''
 
 s = input("Enter a string: ") 
  
-if len(s) < 3:    
-   result = s 
+if len(s) >= 3:    
+   result = s + 'in'
 elif s.endswith('ing'): 
     result = s + 'ly'
 else: 
-    result = s + 'ing' 
+    result = s
  
 print("Resulting string:", result) 
+
